@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "//alenq1.github.io/static/css/main.795991f2.chunk.css",
-    "main.js": "//alenq1.github.io/static/js/main.6e550b11.chunk.js",
-    "main.js.map": "//alenq1.github.io/static/js/main.6e550b11.chunk.js.map",
+    "main.js": "//alenq1.github.io/static/js/main.638c0ef7.chunk.js",
+    "main.js.map": "//alenq1.github.io/static/js/main.638c0ef7.chunk.js.map",
     "runtime-main.js": "//alenq1.github.io/static/js/runtime-main.afe8d3aa.js",
     "runtime-main.js.map": "//alenq1.github.io/static/js/runtime-main.afe8d3aa.js.map",
     "static/css/2.510409cd.chunk.css": "//alenq1.github.io/static/css/2.510409cd.chunk.css",
-    "static/js/2.64201602.chunk.js": "//alenq1.github.io/static/js/2.64201602.chunk.js",
-    "static/js/2.64201602.chunk.js.map": "//alenq1.github.io/static/js/2.64201602.chunk.js.map",
+    "static/js/2.5952db68.chunk.js": "//alenq1.github.io/static/js/2.5952db68.chunk.js",
+    "static/js/2.5952db68.chunk.js.map": "//alenq1.github.io/static/js/2.5952db68.chunk.js.map",
     "index.html": "//alenq1.github.io/index.html",
-    "precache-manifest.ede85376c9333fd83243d48429599595.js": "//alenq1.github.io/precache-manifest.ede85376c9333fd83243d48429599595.js",
+    "precache-manifest.0aa14711d4778813338ed35a05f710db.js": "//alenq1.github.io/precache-manifest.0aa14711d4778813338ed35a05f710db.js",
     "service-worker.js": "//alenq1.github.io/service-worker.js",
     "static/css/2.510409cd.chunk.css.map": "//alenq1.github.io/static/css/2.510409cd.chunk.css.map",
     "static/css/main.795991f2.chunk.css.map": "//alenq1.github.io/static/css/main.795991f2.chunk.css.map",
@@ -43,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.afe8d3aa.js",
     "static/css/2.510409cd.chunk.css",
-    "static/js/2.64201602.chunk.js",
+    "static/js/2.5952db68.chunk.js",
     "static/css/main.795991f2.chunk.css",
-    "static/js/main.6e550b11.chunk.js"
+    "static/js/main.638c0ef7.chunk.js"
   ]
 }
