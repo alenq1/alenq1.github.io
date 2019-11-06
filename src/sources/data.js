@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaEnvelope, FaLinkedin, FaTelegram, FaGithub, FaReact } from 'react-icons/fa'
-import {DiDjango} from 'react-icons/di'
+import { FaEnvelope, FaLinkedin, FaTelegram, FaGithub, FaReact,  } from 'react-icons/fa'
+import {DiDjango, DiHeroku} from 'react-icons/di'
 
 
 export const sideBar = {
@@ -71,9 +71,15 @@ export const skills = [
 
 export const portfolio = [{
     project: 'Reactango-api-crud',
-    repo: <a href='https://github.com/alenq1/reactango-api-crud/'>
+    repo:   <>
+            <a href='https://github.com/alenq1/reactango-api-crud/'>
             <FaGithub className='ml-3' size='1.5em'/>
-            </a>,
+            </a>
+            <a href='https://reactango-api-crud.herokuapp.com/'>
+            <DiHeroku className='ml-3' size='1.5em'/>
+            </a>
+            </>
+            ,
     stack: [<FaReact className='ml-3' size='2.5em'/>, <DiDjango className='ml-3' size='2.5em'/>],
     description: [
         'App  for learning purposes',
@@ -123,7 +129,7 @@ export const portfolio = [{
 },
 {
     project: 'Personal Site',
-    repo: <a href='https://github.com/alenq1/alenq1.github.io/'>
+    repo: <a href='https://github.com/alenq1/my-site'>
             <FaGithub className='ml-5' size='1.5em'/>
             </a>,
     stack: [<FaReact className='ml-3' size='2.5em'/>],
