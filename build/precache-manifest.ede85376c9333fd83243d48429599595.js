@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27b7e75db4408d4d486a72d0cfe8b3cf",
+    "revision": "f1779b24ca98b56e96f663dee626c014",
     "url": "//alenq1.github.io/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//alenq1.github.io/static/css/2.510409cd.chunk.css"
   },
   {
-    "revision": "f74cf3fd5eaa272eca96",
+    "revision": "aabe9d3b487a7d5fd667",
     "url": "//alenq1.github.io/static/css/main.795991f2.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//alenq1.github.io/static/js/2.64201602.chunk.js"
   },
   {
-    "revision": "f74cf3fd5eaa272eca96",
-    "url": "//alenq1.github.io/static/js/main.88619eaa.chunk.js"
+    "revision": "aabe9d3b487a7d5fd667",
+    "url": "//alenq1.github.io/static/js/main.6e550b11.chunk.js"
   },
   {
     "revision": "01ad21960138aa32760f",
