@@ -148,6 +148,28 @@ export const portfolio = [{
     ]
 
 }
+{
+    project: 'React-Django Dockerized',
+    repo: <a href='https://github.com/alenq1/react-django-dockerized/'>
+            <FaGithub className='ml-5' size='1.5em'/>
+            </a>,
+    stack: [<FaReact className='ml-3' size='2.5em'/>, <DiDjango className='ml-3' size='2.5em'/>],
+    description: [
+        'Microservice-oriented deploy',
+        'Docker-compose build and deploy',
+        'For fast developmentet start',
+        'Use redux, thunk, and other esential libraries',
+        'On backend side, websocket, celery tasks, and redis',
+        'Service checks page'
+],
+    images: [
+        require('https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png'),
+        require('https://www.django-rest-framework.org/img/logo.png'),
+        require('https://www.freecodecamp.org/news/content/images/2019/07/1_JK4VDnsrF6YnAb2nyhMsdQ.png'),
+        
+    ]
+
+}
 ]
 
 export const experience = {
