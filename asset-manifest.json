@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.795991f2.chunk.css",
-    "main.js": "/static/js/main.97c7666c.chunk.js",
-    "main.js.map": "/static/js/main.97c7666c.chunk.js.map",
+    "main.css": "/static/css/main.789ae96e.chunk.css",
+    "main.js": "/static/js/main.59c0eb54.chunk.js",
+    "main.js.map": "/static/js/main.59c0eb54.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6a7dd2db.js",
     "runtime-main.js.map": "/static/js/runtime-main.6a7dd2db.js.map",
     "static/css/2.510409cd.chunk.css": "/static/css/2.510409cd.chunk.css",
-    "static/js/2.2fdce513.chunk.js": "/static/js/2.2fdce513.chunk.js",
-    "static/js/2.2fdce513.chunk.js.map": "/static/js/2.2fdce513.chunk.js.map",
+    "static/js/2.bc92372d.chunk.js": "/static/js/2.bc92372d.chunk.js",
+    "static/js/2.bc92372d.chunk.js.map": "/static/js/2.bc92372d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.85954eacc3bac9a8a6d96c52ca7bb45d.js": "/precache-manifest.85954eacc3bac9a8a6d96c52ca7bb45d.js",
+    "precache-manifest.6c4c2ff62a4b9e4f24f47e0c0e758b86.js": "/precache-manifest.6c4c2ff62a4b9e4f24f47e0c0e758b86.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.510409cd.chunk.css.map": "/static/css/2.510409cd.chunk.css.map",
-    "static/css/main.795991f2.chunk.css.map": "/static/css/main.795991f2.chunk.css.map",
+    "static/css/main.789ae96e.chunk.css.map": "/static/css/main.789ae96e.chunk.css.map",
     "static/media/Cryc.jpg": "/static/media/Cryc.9168c113.jpg",
     "static/media/Cryc2.jpg": "/static/media/Cryc2.f90694a7.jpg",
     "static/media/Cryc3.jpg": "/static/media/Cryc3.5f1fcd39.jpg",
@@ -21,6 +21,7 @@
     "static/media/backend-celery.png": "/static/media/backend-celery.1aada32b.png",
     "static/media/backend-channels.png": "/static/media/backend-channels.d09c962b.png",
     "static/media/backend-django.png": "/static/media/backend-django.629515c8.png",
+    "static/media/backend-express.jpg": "/static/media/backend-express.77559a8e.jpg",
     "static/media/backend-postgres.png": "/static/media/backend-postgres.43fa322e.png",
     "static/media/backend-redis.png": "/static/media/backend-redis.eebeb91f.png",
     "static/media/banner.jpg": "/static/media/banner.bf02a760.jpg",
@@ -28,6 +29,7 @@
     "static/media/front-react.png": "/static/media/front-react.6967bdf9.png",
     "static/media/front-redux.png": "/static/media/front-redux.4c52bf71.png",
     "static/media/front-stack.png": "/static/media/front-stack.4b3f4513.png",
+    "static/media/jwt.png": "/static/media/jwt.835e5024.png",
     "static/media/other-compose.png": "/static/media/other-compose.93ffd83c.png",
     "static/media/other-freebsd.png": "/static/media/other-freebsd.22f8dceb.png",
     "static/media/other-jenkins.png": "/static/media/other-jenkins.4e465891.png",
@@ -43,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.6a7dd2db.js",
     "static/css/2.510409cd.chunk.css",
-    "static/js/2.2fdce513.chunk.js",
-    "static/css/main.795991f2.chunk.css",
-    "static/js/main.97c7666c.chunk.js"
+    "static/js/2.bc92372d.chunk.js",
+    "static/css/main.789ae96e.chunk.css",
+    "static/js/main.59c0eb54.chunk.js"
   ]
 }
