@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,sBACF,CAEA,EACE,QAAS,CACT,SAAU,CACV,qBACF,CAEA,KACE,kBAGF","file":"main.789ae96e.chunk.css","sourcesContent":["html {\n  scroll-behavior: smooth;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: \"Ubuntu\";\n  \n  \n}\n"]}

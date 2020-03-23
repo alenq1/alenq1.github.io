@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6c367cf343e98c0ae23e732d0398267e",
+    "revision": "eb5d80d5761d383f35a7f86deaf8b425",
     "url": "/index.html"
   },
   {
-    "revision": "4d4ee12fac2ce5b6e976",
+    "revision": "8f1c71385b2d0212c93b",
     "url": "/static/css/2.510409cd.chunk.css"
   },
   {
-    "revision": "f89e57d0b2d0d296eabe",
-    "url": "/static/css/main.795991f2.chunk.css"
+    "revision": "53c4718a5e37cb025a16",
+    "url": "/static/css/main.789ae96e.chunk.css"
   },
   {
-    "revision": "4d4ee12fac2ce5b6e976",
-    "url": "/static/js/2.2fdce513.chunk.js"
+    "revision": "8f1c71385b2d0212c93b",
+    "url": "/static/js/2.bc92372d.chunk.js"
   },
   {
-    "revision": "f89e57d0b2d0d296eabe",
-    "url": "/static/js/main.97c7666c.chunk.js"
+    "revision": "53c4718a5e37cb025a16",
+    "url": "/static/js/main.59c0eb54.chunk.js"
   },
   {
     "revision": "cf3b9a7220f17afd4f8c",
@@ -56,6 +56,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/backend-django.629515c8.png"
   },
   {
+    "revision": "77559a8e9979c11bb14cae9fcd74f6aa",
+    "url": "/static/media/backend-express.77559a8e.jpg"
+  },
+  {
     "revision": "43fa322ee4f81de6e6a5a3a9066a6b71",
     "url": "/static/media/backend-postgres.43fa322e.png"
   },
@@ -82,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4b3f4513093623c5585e366d8872affd",
     "url": "/static/media/front-stack.4b3f4513.png"
+  },
+  {
+    "revision": "835e5024bfce35d04601d8e09e5777a6",
+    "url": "/static/media/jwt.835e5024.png"
   },
   {
     "revision": "93ffd83c7ef18cf44823e486f815933f",
