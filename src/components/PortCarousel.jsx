@@ -12,8 +12,8 @@ const PortCarousel = ({content}) => {
         className=""
         src={image}
         alt={image[index]}
-        width='500px'
-        height='250px'
+        width='100%'
+        height='100%'
         
       />
       

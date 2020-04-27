@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7a3de72406dbaa1b027e4932c75279a1",
+    "revision": "b15e6542afb2dca9f7b9f1cc402eb1c0",
     "url": "/index.html"
   },
   {
-    "revision": "53bac065b954d8c994fb",
+    "revision": "7c73bf40e1e153441f78",
     "url": "/static/css/2.510409cd.chunk.css"
   },
   {
-    "revision": "bd40a7b3c9cfa3297e58",
-    "url": "/static/css/main.795991f2.chunk.css"
+    "revision": "57ce0650532045603cd5",
+    "url": "/static/css/main.d3f3a75a.chunk.css"
   },
   {
-    "revision": "53bac065b954d8c994fb",
-    "url": "/static/js/2.5952db68.chunk.js"
+    "revision": "7c73bf40e1e153441f78",
+    "url": "/static/js/2.8219f2fd.chunk.js"
   },
   {
-    "revision": "bd40a7b3c9cfa3297e58",
-    "url": "/static/js/main.12ba94a7.chunk.js"
+    "revision": "57ce0650532045603cd5",
+    "url": "/static/js/main.79298760.chunk.js"
   },
   {
     "revision": "cf3b9a7220f17afd4f8c",
@@ -52,28 +52,44 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/backend-channels.d09c962b.png"
   },
   {
-    "revision": "629515c8e7bd43f35fa60e23c09f5a12",
-    "url": "/static/media/backend-django.629515c8.png"
+    "revision": "1d528e2cb5fbc29ad16c74e5d883c371",
+    "url": "/static/media/backend-django.1d528e2c.png"
   },
   {
-    "revision": "43fa322ee4f81de6e6a5a3a9066a6b71",
-    "url": "/static/media/backend-postgres.43fa322e.png"
+    "revision": "073ab65454222ba1e60d136cc3d030c1",
+    "url": "/static/media/backend-drf-transparent.073ab654.png"
   },
   {
-    "revision": "eebeb91f5a4b8255f2305a598c361f08",
-    "url": "/static/media/backend-redis.eebeb91f.png"
+    "revision": "be27d3033868600d7fe5926941ffec13",
+    "url": "/static/media/backend-express.be27d303.png"
+  },
+  {
+    "revision": "067ff55601f9e27a9b22c5708514811e",
+    "url": "/static/media/backend-mongo-transparent.067ff556.png"
+  },
+  {
+    "revision": "01a8c7a17af1768f47d5453197248600",
+    "url": "/static/media/backend-mysql-transparent.01a8c7a1.png"
+  },
+  {
+    "revision": "f1ce2f52455fef949227a7669b792a89",
+    "url": "/static/media/backend-node-transparent.f1ce2f52.png"
+  },
+  {
+    "revision": "c2223c1b8cd29baab59dfe6f4cc0bff5",
+    "url": "/static/media/backend-postgres-transparent.c2223c1b.png"
+  },
+  {
+    "revision": "3cc1b701c0349bb7ebf1b0aa0c084ce4",
+    "url": "/static/media/backend-redis-transparent.3cc1b701.png"
   },
   {
     "revision": "bf02a7601170733ad5dbeb8390c398d4",
     "url": "/static/media/banner.bf02a760.jpg"
   },
   {
-    "revision": "472a16de87fa97bc6ca9919bee4694cb",
-    "url": "/static/media/front-bootstrap.472a16de.png"
-  },
-  {
-    "revision": "6967bdf9094d7e554e5064867a3a8712",
-    "url": "/static/media/front-react.6967bdf9.png"
+    "revision": "208824c031cbdc553ef4580048380722",
+    "url": "/static/media/front-bootstrap-transparent.208824c0.png"
   },
   {
     "revision": "4c52bf71d453b550a38983c73365ab58",
@@ -82,6 +98,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4b3f4513093623c5585e366d8872affd",
     "url": "/static/media/front-stack.4b3f4513.png"
+  },
+  {
+    "revision": "f0adc303b06f524ae44ae232f0d82f85",
+    "url": "/static/media/frontend-react-logo-transparent.f0adc303.png"
+  },
+  {
+    "revision": "835e5024bfce35d04601d8e09e5777a6",
+    "url": "/static/media/jwt.835e5024.png"
+  },
+  {
+    "revision": "62a28f44a2fa93f177dac149bcba2fb6",
+    "url": "/static/media/other-bash-transparent.62a28f44.png"
   },
   {
     "revision": "93ffd83c7ef18cf44823e486f815933f",
@@ -94,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4e4658913d463a0cceaacfcfa80d7553",
     "url": "/static/media/other-jenkins.4e465891.png"
+  },
+  {
+    "revision": "6b5e6f8d025f78dbfa2952142c93e2c5",
+    "url": "/static/media/other-linux.6b5e6f8d.png"
   },
   {
     "revision": "f00a3ff9fb8c0246ba88ae04e664a19b",
