@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaEnvelope, FaLinkedin, FaTelegram, FaGithub, FaReact,  } from 'react-icons/fa'
-import {DiDjango, DiHeroku} from 'react-icons/di'
+import { FaEnvelope, FaLinkedin, FaTelegram, FaGithub, FaReact, FaNodeJs, FaDocker } from 'react-icons/fa'
+import {DiDjango, DiHeroku, DiMongodb, DiPostgresql, DiRedis, DiNodejs, DiMysql} from 'react-icons/di'
 
 
 export const sideBar = {
@@ -17,8 +17,8 @@ export const skills = [
     frameworks: ['react'],
     libraries: [
     {name: 'basic-stack', image: require('../assets/img/front-stack.png')},
-    {name: 'boostrap', image: require('../assets/img/front-bootstrap.png')},
-    {name: 'react', image: require('../assets/img/front-react.png')},
+    {name: 'boostrap', image: require('../assets/img/front-bootstrap-transparent.png')},
+    {name: 'react', image: require('../assets/img/frontend-react-logo-transparent.png')},
     {name: 'redux', image: require('../assets/img/front-redux.png')},
     {name: 'axios', image: require('../assets/img/front-axios.png')},
     {name: 'react-echarts', image: require('../assets/img/front-echarts2.png')},
@@ -33,14 +33,19 @@ export const skills = [
     frameworks: ['django'],
     libraries: [
         {name: 'python', image: require('../assets/img/backend-python.png')},
+        {name: 'node', image: require('../assets/img/backend-node-transparent.png')},        
+        {name: 'typescript', image: require('../assets/img/typescript.png')},
         {name: 'django', image: require('../assets/img/backend-django.png')},
-        {name: 'rest framework', image: require('../assets/img/backend-drf.png')},
+        {name: 'rest framework', image: require('../assets/img/backend-drf-transparent.png')},
+        {name: 'express', image: require('../assets/img/backend-express.png')},
         {name: 'channels', image: require('../assets/img/backend-channels.png')},
+        {name: 'socket.io', image: require('../assets/img/socket-io.png')},
         {name: 'celery', image: require('../assets/img/backend-celery.png')},
-        {name: 'postgres', image: require('../assets/img/backend-postgres.png')},
-        {name: 'mysql', image: require('../assets/img/backend-mysql.png')},
-        {name: 'redis', image: require('../assets/img/backend-redis.png')},
-        {name: 'beautifulSoup', image: require('../assets/img/backend-bs4.png')},
+        {name: 'postgres', image: require('../assets/img/backend-postgres-transparent.png')},
+        {name: 'mysql', image: require('../assets/img/backend-mysql-transparent.png')},
+        {name: 'mongodb', image: require('../assets/img/backend-mongo-transparent.png')},
+        {name: 'redis', image: require('../assets/img/backend-redis-transparent.png')},
+        {name: 'jwt', image: require('../assets/img/jwt.png')},
 
 ]
 },
@@ -56,9 +61,9 @@ export const skills = [
         {name: 'docker-compose', image: require('../assets/img/other-compose.png')},
         {name: 'jenkins', image: require('../assets/img/other-jenkins.png')},
         {name: 'ansible', image: require('../assets/img/other-ansible.png')},        
-        {name: 'linux', image: require('../assets/img/other-linux.jpeg')},
+        {name: 'linux', image: require('../assets/img/other-linux.png')},
         {name: 'freebsd', image: require('../assets/img/other-freebsd.png')},
-        {name: 'bash', image: require('../assets/img/other-bash.jpg')},
+        {name: 'bash', image: require('../assets/img/other-bash-transparent.png')},
         {name: 'zimbra', image: require('../assets/img/other-zimbra.jpg')},
         {name: 'xenserver', image: require('../assets/img/other-xenserver.png')},
 
@@ -80,7 +85,10 @@ export const portfolio = [{
             </a>
             </>
             ,
-    stack: [<FaReact className='ml-3' size='2.5em'/>, <DiDjango className='ml-3' size='2.5em'/>],
+    stack: [<FaReact className='ml-3' size='2.5em'/>, 
+            <DiDjango className='ml-3' size='2.5em'/>,
+            <DiPostgresql className='ml-3' size='2.5em'/>
+            ],
     description: [
         'App  for learning purposes',
         'Display dashboard and Menu sections',
@@ -103,7 +111,10 @@ export const portfolio = [{
     repo: <a href='https://github.com/alenq1/cryptoweb/'>
             <FaGithub className='ml-3' size='1.5em'/>
         </a>,
-    stack: [<FaReact className='ml-3' size='2.5em'/>, <DiDjango className='ml-3' size='2.5em'/>],
+    stack: [<FaReact className='ml-3' size='2.5em'/>, 
+            <DiDjango className='ml-3' size='2.5em'/>,
+            <FaDocker className='ml-3' size='2.5em'/>,
+            ],
     description: [
         'App for learning purposes', 
         'Use redux store, selectors and thunk',
@@ -153,7 +164,11 @@ export const portfolio = [{
     repo: <a href='https://github.com/alenq1/react-django-dockerized/'>
             <FaGithub className='ml-5' size='1.5em'/>
             </a>,
-    stack: [<FaReact className='ml-3' size='2.5em'/>, <DiDjango className='ml-3' size='2.5em'/>],
+    stack: [<FaReact className='ml-3' size='2.5em'/>, 
+            <DiDjango className='ml-3' size='2.5em'/>,
+            <FaDocker className='ml-3' size='2.5em'/>,
+            <DiRedis className='ml-3' size='2.5em'/>
+        ],
     description: [
         'Microservice-oriented deploy',
         'Docker-compose build and deploy',
@@ -169,7 +184,41 @@ export const portfolio = [{
         
     ]
 
-}
+},
+{
+    project: 'XERN Dockerized',
+    repo: <a href='https://github.com/alenq1/XERN-Dockerized'>
+            <FaGithub className='ml-5' size='1.5em'/>
+            </a>,
+    stack: [<FaReact className='ml-3' size='2.5em'/>, 
+            <FaDocker className='ml-3' size='2.5em'/>,
+            <FaNodeJs className='ml-3' size='2.5em'/>,
+            <DiMongodb className='ml-3' size='2.5em'/>,
+            <DiPostgresql className='ml-3' size='2.5em'/>,
+            <DiMysql className='ml-3' size='2.5em'/>,
+
+            
+            ],
+    description: [
+        'Microservice-oriented deploy',
+        'Docker-compose build and deploy',
+        'For fast developmentet start',
+        'Use redux, thunk, and other React libraries',
+        'Express for api backend controller routes and models',
+        'Socket.io for real time data, bull queue tasks, and redis',
+        'CRUD tasks, Mongodb and sql databases (Mysql Postgres)',
+        'Authentication and Authorization with JWT',
+        'Service checks page'
+],
+    images: [
+        'https://static.platzi.com/media/blog/mern-stack-284eedb6-ee6b-4441-b181-5064a453a15a.png',
+        'https://www.onlogic.com/company/io-hub/wp-content/uploads/2013/07/socket-io-logo.jpg',
+        'https://www.freecodecamp.org/news/content/images/2019/07/1_JK4VDnsrF6YnAb2nyhMsdQ.png',
+        'https://miro.medium.com/max/365/1*Jr3NFSKTfQWRUyjblBSKeg.png'        
+    ]
+
+},
+
 ]
 
 export const experience = {
