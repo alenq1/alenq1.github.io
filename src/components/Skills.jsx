@@ -4,37 +4,6 @@ import {skills} from '../sources/data'
 import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 
-const Skills = () => {
-    return (
-        <>
-        <div className=''>
-            
-            {skills.map( (skills, index) => (
-            <Fade bottom>
-            <Card className='m-4'>
-                <Card.Header>
-                <h4 className='lead'>{skills.type}</h4>
-                </Card.Header>
-                <Card.Body className="row">
-                    {skills.libraries.map( (libraries, index) => (
-                    <div className='ml-lg-4 ml-md-3 mt-sm-3 p-sm-2 col-lg-2 col-md-4 col-sm-12'>
-                        
-                    <img src={libraries.image} height='115' alt={index}/>
-                    <p className='ml'></p>
-                    
-                    </div>
-                    ))}                    
-                </Card.Body>            
-            </Card>
-            </Fade>
-            ))}  
-        </div>
-    </>
-    )
-}
-
-export default Skills
-
 
 const StyledSkills = styled.div`
 
@@ -56,6 +25,10 @@ const StyledSkills = styled.div`
         padding: 1rem 0rem;
         opacity: 0.9;
         
+    }
+
+    h4 {
+        font-weight: var(--font-medium);
     }
 
     .body{
@@ -128,21 +101,19 @@ const StyledSkills = styled.div`
 }
 
 `
-
-
-export const NewSkills = () => {
+const Skills = () => {
     return (
     
         <StyledSkills>    
             {skills.map( (skills, index) => (
-            <Fade bottom>
-                <div className='cardskill'>
+            <Fade bottom key={index}>
+                <div className='cardskill' >
                     <div className='header'>
                         <h4>{skills.type}</h4>
                     </div>
                     <div className='body'>
-                        {skills.libraries.map( (libraries, index) => (
-                        <div className='single-skill'>
+                        {skills.libraries.map( (libraries, libindex) => (
+                        <div className='single-skill' key={libindex}>
                             <img src={libraries.image} alt={index}/>
                             <p className='ml'></p>                    
                         </div>
@@ -155,3 +126,5 @@ export const NewSkills = () => {
     
     )
 }
+
+export default Skills

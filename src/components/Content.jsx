@@ -2,22 +2,17 @@ import React from 'react'
 import { Button,  } from 'react-bootstrap'
 import {IoIosArrowDropdownCircle,} from 'react-icons/io'
 import styled from 'styled-components'
-import Skills, {NewSkills} from './Skills'
-import Portfolio, {NewPortfolio} from './Portfolio'
+import Skills from './Skills'
+import Portfolio from './Portfolio'
 import Contact from './Contact'
-import Experience, {NewExperience} from './Experience'
+import Experience from './Experience'
 import Fade from 'react-reveal/Fade'
 import Jump from 'react-reveal/Jump'
-
+import ilust from '../assets/img/displays.svg'
 
 //const img = require('../assets/img/banner.jpg')
 
 const StyledContent = styled.div`
-
-
---slider-colors: linear-gradient(to left, #780206, #061161);
---titles-colors: whitesmoke;
-
 
 
 background-repeat: repeat;
@@ -28,7 +23,7 @@ height: 100%;
 
 
 .title {
-    padding: 20% 0 0 0;
+    padding: 10% 0 0 0;
     color: var(--titles-colors);
     text-shadow: 2px 2px 8px #000;
     
@@ -48,8 +43,23 @@ height: 100%;
     
 }
 
+.ilust {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    margin: -3em 0em 0em 0em;
+}
+
 
 .showbutton {
+    display: flex;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-image: var(--slider-colors);
+    width: 20%;
+
+    align-items: center;
+    justify-content: center;
     margin: 15% 0%;
     text-shadow: 2px 2px 8px #000;
     a{        
@@ -60,19 +70,23 @@ height: 100%;
 }
 
 .sections {
-    
+    /*max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;*/
+
 }
 
 .slides {
     background : var(--slider-colors);
     color: var(--titles-colors);
     text-shadow: 2px 2px 8px #000;
-    padding: 3.5rem;
+    padding: 2rem;
 
     h3{
-        font-size: 3.5rem;
-        font-weight: 300;
+        font-size: 6rem;
+        font-weight: bold;
         line-height: 1.2;
+
         }
 }
 
@@ -128,18 +142,16 @@ const Content = () => {
         <StyledContent>            
             <Fade bottom>
                 <div className='title'>  
+                    <img src={ilust} alt='sdfdf' className='ilust'/>
                         <p >Let`s solve some problems </p>
-                        <p className='complement'>with IT</p>                    
+                        <p className='complement'>with Code</p>                    
                 </div>
                 <div className='showbutton'>
-                    <a href='#skills' style={{marginTop: '10%'}}>
-                        <p>
-                        <Jump forever='true'>                            
-                            <IoIosArrowDropdownCircle size='4em'/>
-                        </Jump>   
-                            Show me How 
-                        </p>
-                    </a>                                
+                    <Jump forever='true'>
+                        <a href='#skills'>
+                            Show me How                    
+                        </a>                                
+                    </Jump>
                 </div>
             </Fade>
             <div className='sections'>
@@ -148,21 +160,21 @@ const Content = () => {
                         <h3 id='skills'>Skills</h3>                
                     </div>        
                 </Fade>
-                <NewSkills/>
+                <Skills/>
             
                 <Fade right>
                     <div className='slides'>
                         <h3 id='portfolio'>PortFolio</h3>
                     </div>
                 </Fade>
-                <NewPortfolio/>
+                <Portfolio/>
                 
                 <Fade right>
                     <div className='slides'>                
                         <h3 id='experience'>Experience</h3>                
                     </div>
                 </Fade>                
-                <NewExperience/>
+                <Experience/>
                 
                 <Fade right>
                     <div className='slides'>

@@ -1,36 +1,42 @@
-import React from 'react'
-import {Nav, Button} from 'react-bootstrap'
-import Buttons from '../components/Buttons'
+import React from 'react';
 import {FaThList, FaWrench, FaBriefcase, FaUserFriends} from 'react-icons/fa'
 import styled, {keyframes} from 'styled-components'
 import Fade from 'react-reveal/Fade'
 
 
-const StyledSideBar = styled.div`
+const StyledHeader = styled.header`
 
-position: -webkit-sticky;
 position: sticky;
-top: 10%;
+top: 0%;
 color: white;
+display: flex;
+flex-direction: row;
+background-image: var(--header-bg);
+height: 75px;
+width: 100%;
+filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5));
+z-index: 3;
 
 
 
 .logo {
     display: flex;    
-    height: 150px;
-    width: 150px;
-    background-image: linear-gradient(330deg, rgba(225, 225, 225, 0.05) 0%, rgba(225, 225, 225, 0.05) 33.333%,rgba(114, 114, 114, 0.05) 33.333%, rgba(114, 114, 114, 0.05) 66.666%,rgba(52, 52, 52, 0.05) 66.666%, rgba(52, 52, 52, 0.05) 99.999%),linear-gradient(66deg, rgba(181, 181, 181, 0.05) 0%, rgba(181, 181, 181, 0.05) 33.333%,rgba(27, 27, 27, 0.05) 33.333%, rgba(27, 27, 27, 0.05) 66.666%,rgba(251, 251, 251, 0.05) 66.666%, rgba(251, 251, 251, 0.05) 99.999%),linear-gradient(225deg, rgba(98, 98, 98, 0.05) 0%, rgba(98, 98, 98, 0.05) 33.333%,rgba(222, 222, 222, 0.05) 33.333%, rgba(222, 222, 222, 0.05) 66.666%,rgba(228, 228, 228, 0.05) 66.666%, rgba(228, 228, 228, 0.05) 99.999%),linear-gradient(90deg, rgb(28, 20, 63),rgb(40, 160, 253));
+    height: calc(2 * 50px);
+    width: calc(2 * 50px);
+    background-image: var(--header-color);
+    /*background-image: linear-gradient(307deg, transparent 0%, transparent 10%,rgba(190, 190, 190,0.04) 10%, rgba(190, 190, 190,0.04) 64%,transparent 64%, transparent 100%),linear-gradient(118deg, transparent 0%, transparent 11%,rgba(190, 190, 190,0.04) 11%, rgba(190, 190, 190,0.04) 31%,transparent 31%, transparent 100%),linear-gradient(73deg, transparent 0%, transparent 22%,rgba(190, 190, 190,0.04) 22%, rgba(190, 190, 190,0.04) 90%,transparent 90%, transparent 100%),linear-gradient(156deg, transparent 0%, transparent 51%,rgba(190, 190, 190,0.04) 51%, rgba(190, 190, 190,0.04) 97%,transparent 97%, transparent 100%),linear-gradient(90deg, rgb(15,28,82),rgb(15,28,82));*/
     align-items: center;
     justify-content; center;
-    margin: 0px auto;
-    display: relative;
+    margin: 1em;
+    position: relative;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 16% 51%, 0% 0%);
+
 }
 
 
 .console {
-    width: 80px;
-    height: 70px;
+    width: calc(2 * 30px);
+    height: calc(2 * 25px);
     background-image: linear-gradient(45deg, rgba(13, 13, 13,0.04) 0%, rgba(13, 13, 13,0.04) 36%,rgba(108, 108, 108,0.04) 36%, rgba(108, 108, 108,0.04) 76%,rgba(202, 202, 202,0.04) 76%, rgba(202, 202, 202,0.04) 100%),linear-gradient(0deg, rgba(13, 13, 13,0.04) 0%, rgba(13, 13, 13,0.04) 28%,rgba(108, 108, 108,0.04) 28%, rgba(108, 108, 108,0.04) 39%,rgba(202, 202, 202,0.04) 39%, rgba(202, 202, 202,0.04) 100%),linear-gradient(135deg, rgba(13, 13, 13,0.04) 0%, rgba(13, 13, 13,0.04) 56%,rgba(108, 108, 108,0.04) 56%, rgba(108, 108, 108,0.04) 97%,rgba(202, 202, 202,0.04) 97%, rgba(202, 202, 202,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
     background-size: contain;
     border-radius: 10px;
@@ -38,7 +44,7 @@ color: white;
     color: #58d817;
     position: relative;
     object-fit: cover;
-    font-weight: bold;
+    font-weight: var(--font-medium);
 }
 
 .titlebar{
@@ -81,8 +87,11 @@ color: white;
 
 
 .slideset3 {
+	margin: 1.5em 0em 0em 0em;
+	width: 40em;
     height: 3em; position: relative;
-    overflow: hidden
+    overflow: hidden;
+
 }
 .slideset3 > * {
     height: 100%; box-sizing: border-box;
@@ -95,47 +104,73 @@ color: white;
 
 
 img {
-    display: block;
-    width: 30%;
-    height: 35%;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
     
 }
 
 h3, h4 {
     margin-top: 1rem;
     text-align: center;
+    font-weight: var(--font-medium);
 }
 
 .buttons {
 
-    display: block;
+    display: flex;
     width: 100%;
-    padding: 3rem;
+    /*padding: 3rem;*/
+    margin: 1em 0em 0em 15em;
+    position: relative;
+    
+
 }
 
-.buttons a{
-    margin-top: 2rem;
-    width: 100%;
-    color: white;
+
+.buttons a {
+    margin-top: 1em;
+    width: 20%;
+    height: calc(2 * 35px);
+    font-weight: 900;
+    font-size: .9em;
+    color: whitesmoke;
 	box-shadow: 3px 4px 0px 0px black;
-	background-image: linear-gradient(45deg, #780206 0%, #780206 55%, #061161 90%);
-    background-position: 100% 0;
-    background-size: 200% 200%;
-	border-radius: 18px;
-	border: 1px solid linear-gradient(to left, #780206, #061161);
+	background-image: var(--header-color);
+	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 16% 51%, 0% 0%);
 	display: inline-block;
 	cursor: pointer;
 	color:#ffffff;
-	padding:7px 25px;
-	text-decoration:none;
+	padding:20px 30px;
+	text-decoration: none;
 	text-shadow:0px 1px 0px darkgrey;
     /*box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);*/
     transition: all 0.5s ease;
-    
+    /*transition: all .5s ease-in-out;*/
+
 }
+
+.buttons a:hover{
+    transform: scale(1.1);
+}
+
+ul {
+	list-style: none;
+	algin-items: center;
+	justify-content: center;
+}
+
+li {
+	height: 100%;
+}
+
+.btn-icons {
+	margin-left: 3em;
+	position: absolute;
+	width: 3em;
+	height: 3em;
+	opacity: 0.15;
+}
+
+
+
 .buttons a:hover{
     box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
     background-position: 0 0;
@@ -191,7 +226,7 @@ width: 100vw;
     height: 40px;
     border-radius: 10px;
     margin: 2em auto;
-    font-weight: bold;
+    font-weight: var(--font-medium);
 }
 
 .titlebar{
@@ -267,17 +302,15 @@ h3, h4 {
 
 
 
-
 }
+
 
 `
 
-
-const Sidebar = () => {
-    return (
-        
-        <StyledSideBar>
-            <Fade left> 
+const Header = (props) => {
+  return (
+    <StyledHeader>
+    	<Fade left> 
                 <div className="headertext">
                     {/*<img src={require('../assets/img/terminal2.gif')} alt="Avatar" />*/}
                     <div className='logo'>
@@ -285,40 +318,48 @@ const Sidebar = () => {
                             <div className='titlebar'>
                             </div>
                             <h5 className='prompt'>>
-                                <h5 className='cursor'>_</h5>
+                                <div className='cursor'>_</div>
                                 <div className="console-msg">
                                     hello
                                 </div>
                             </h5>
                         </div>
                     </div>
-                    <div className="slideset3">
+                </div>    
+                <div className="slideset3">
                         <h3 className='item-1'>Alejandro Castellanos</h3>
                         <h4 className='item-2'>Web Developer &amp;</h4>                            
                         <h4 className='item-2'>IT Problem Solver</h4>  
-                    </div>
-                </div>    
-                <div className='buttons'>
-                    <a  eventKey="link-1" href='#skills' variant='outline-light'>
-                        <FaWrench className='mr-lg-5 mr-md-5' />
-                            <span>Skills</span>
+                </div>
+                <ul className='buttons'>
+                    <a href='#skills'>
+                    	<li>
+                        	<FaWrench className='btn-icons' />
+                            	<span>Skills</span>
+                        </li>
                     </a>
-                    <a eventKey="link-2" href='#portfolio' variant='outline-light'>
-                        <FaBriefcase className='mr-lg-5 mr-md-5' />
+                    <a href='#portfolio'>
+                    	<li>
+                        <FaBriefcase className='btn-icons' />
                         <span>Portfolio</span>
+                        </li>
                     </a>
-                    <a eventKey="link-2" href='#experience' variant='outline-light'>
-                        <FaThList className='mr-lg-5 mr-md-5' />
+                    <a href='#experience'>
+                    	<li>
+                        <FaThList className='btn-icons' />
                         <span>Experience</span>
+                        </li>
                     </a>
-                    <a href='#contact' variant='outline-light'>
-                        <FaUserFriends className='mr-lg-5 mr-md-5' />
+                    <a href='#contact'>
+                    	<li>
+                        <FaUserFriends className='btn-icons' />
                         <span>Contact</span>
+                        </li>
                     </a>    
-                </div>        
+                </ul>        
             </Fade>
-        </StyledSideBar>
-    )
+    </StyledHeader>
+  )
 }
 
-export default Sidebar
+export default Header;

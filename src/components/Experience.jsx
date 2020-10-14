@@ -5,42 +5,6 @@ import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 
 
-const Experience = () => {
-    return (
-        <div>
-        <Fade bottom>
-        
-            <Card className='m-4'>
-                <Card.Header>
-                    <h4 className='lead'>{experience.title}</h4>
-                </Card.Header>
-                <Card.Body>
-                    <div className='row container-fluid'>
-                    {experience.types.map((items, index)=> (
-                       <div className='m-2 mt-3 col-lg-5 col-md-6 col-sm-12' style={{textAlign: 'left'}}> 
-                       <h5 className='lead mt-4 mb-4' >{items.name}</h5>
-                       {items.description.map((item, index) => (
-
-                        <li className="mt-1">{item}</li>
-                       ))}
-                        
-                        </div>
-                    ))}
-                    </div>
-                </Card.Body>
-
-
-            </Card>
-            
-        </Fade>
-        </div>
-    )
-}
-
-export default Experience
-
-
-
 const StyledExperience = styled.div`
 
 .card-experience {
@@ -64,7 +28,7 @@ const StyledExperience = styled.div`
         display: flex;
         flex-wrap: wrap;
         background: var(--card-background);
-        opacity: 0.9;
+        /*opacity: 0.9;*/
         width: 100%;
         
         .experience-list {
@@ -140,7 +104,7 @@ const StyledExperience = styled.div`
 
 
 
-export const NewExperience = () => {
+export const Experience = () => {
     return (
         <StyledExperience>
         <Fade bottom>
@@ -152,11 +116,11 @@ export const NewExperience = () => {
                 <div className='body'>
                     <div className='experience-list'>
                     {experience.types.map((items, index)=> (
-                    <div> 
+                    <div key={index}> 
                        <h5 className='' >{items.name}</h5>
                        {items.description.map((item, index) => (
 
-                        <li className="">{item}</li>
+                        <li key={index}>{item}</li>
                        ))}
                         
                     </div>
@@ -173,3 +137,4 @@ export const NewExperience = () => {
 }
 
 
+export default Experience
