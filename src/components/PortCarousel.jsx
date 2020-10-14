@@ -7,7 +7,7 @@ const PortCarousel = ({content}) => {
     return (
         <Carousel>
     {content.images.map( (image, index) => (
-      <Carousel.Item>
+      <Carousel.Item key={index}>
       <img
         className=""
         src={image}

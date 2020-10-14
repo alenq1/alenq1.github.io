@@ -9,86 +9,6 @@ import styled from 'styled-components'
 
 
 
-
-
-
-const Portfolio = () => {
-
-   // const [toggle, setToggle] = useState(false)
-   // const [isHover, setHover] = useState(false)
-    const [show, setShow] = useState(false)
-   // const [index, showIndex] = useState(0)
-
-
-    //const CustomButton = () => 
-
-            
-    return (
-        <>
-                <Fade bottom>
-                <div className="row container">
-                
-
-                
-                {portfolio.map( (detail, index) => (
-                
-                <Card className='m-4 col-lg-5 col-md-12 col-sm-12' key={index} 
-                style={{                 }}>
-                <Card.Header>
-                    <h6 className='lead'>{detail.project}{detail.repo}</h6>
-                
-                </Card.Header>
-                <Card.Body>
-                <PortCarousel content={detail} key={index}/>
-                
-                <div>
-                
-                </div>
-                <div>
-                
-                <Accordion>
-                <Accordion.Toggle as={Button} eventKey={index} className="m-3">
-                <FaAngleDoubleDown size='2em' onclick={()=> setShow(!show)}/> Details
-                </Accordion.Toggle>
-                
-                
-                <Accordion.Collapse eventKey={index}>
-                <div>
-                <Fade bottom >
-                {detail.description.map((list, index) => (
-                
-                <li key={index}>{list}</li>
-                
-                ))}    
-                </Fade>
-                </div>
-                
-                </Accordion.Collapse>    
-                </Accordion>
-                </div>
-                <Card.Footer>
-                    Stack Used
-                    {detail.stack.map((stack, index) => (
-
-                        stack
-                    ))}
-                </Card.Footer>  
-                </Card.Body>
-
-                </Card>
-                
-                ))}
-                
-                
-                </div>
-                </Fade>
-        </>
-    )
-}
-
-export default Portfolio
-
-
 const StyledPortfolio = styled.div `
 
 
@@ -108,6 +28,7 @@ const StyledPortfolio = styled.div `
         opacity: 0.9;
         text-align: center;
         font-size: 1.5rem;
+        font-weight: var(--font-medium);
 
         a{
             color: whitesmoke;
@@ -216,12 +137,9 @@ const StyledPortfolio = styled.div `
 }
 
 }
-
-
-
 `
 
-export const NewPortfolio = () => {
+const Portfolio = () => {
 
     // const [toggle, setToggle] = useState(false)
     // const [isHover, setHover] = useState(false)
@@ -230,33 +148,32 @@ export const NewPortfolio = () => {
      //const CustomButton = () => 
 
     return (
-        <StyledPortfolio>
-                
+        <StyledPortfolio>                
                     <div>                                   
                         {portfolio.map( (detail, index) => (                 
-                        <Fade bottom>
-                        <div className='card-portfolio' key={index}>
+                        <Fade bottom key={index}>
+                        <div className='card-portfolio'>
                             <div className='header'>
-                                <h4>{detail.project}{detail.repo}</h4>                 
+                                <span>{detail.project}{detail.repo}</span>                 
                             </div>
-                            <div className='body'>                                
+                            <div className='body' key={index+1}>                                
                                 <div className='projects'>
                                     <div className='slide-show'>
-                                        <PortCarousel content={detail} key={index}/>
+                                        <PortCarousel content={detail}/>
                                     </div>
                                     <div className='description'>
                                             <Fade bottom >
-                                                {detail.description.map((list, index) => (                 
-                                                    <li key={index}>{list}</li>                 
+                                                {detail.description.map((list, desc_index) => (                 
+                                                    <li key={desc_index+2}>{list}</li>                 
                                                 ))}    
                                             </Fade>
                                     </div>
                                 </div>
                             </div>   
-                            <div className='footer'>
+                            <div className='footer' key={index+3}>
                                 <span>Stack Used</span>
                                 <span>
-                                {detail.stack.map((stack, index) => ( 
+                                {detail.stack.map((stack) => ( 
                                     stack
                                 ))}
                                 </span>
@@ -265,8 +182,8 @@ export const NewPortfolio = () => {
                         </Fade>    
                         ))}
                     </div>
-                
             </StyledPortfolio>
         )
 }
 
+export default Portfolio
