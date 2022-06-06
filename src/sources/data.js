@@ -1,6 +1,15 @@
 import React from 'react'
-import { FaEnvelope, FaLinkedin, FaTelegram, FaGithub, FaReact, FaNodeJs, FaDocker } from 'react-icons/fa'
-import {DiDjango, DiHeroku, DiMongodb, DiPostgresql, DiRedis, DiNodejs, DiMysql} from 'react-icons/di'
+import { 
+    FaEnvelope, FaLinkedin, FaTelegram, FaGithub, 
+    FaReact, FaNodeJs, FaDocker,
+    FaGlobeAmericas, FaEthereum 
+} 
+    from 'react-icons/fa'
+import {
+    DiDjango, DiHeroku, DiMongodb, DiPostgresql, DiRedis, DiNodejs, DiMysql
+} from 'react-icons/di'
+
+import {SiSolidity} from 'react-icons/si'
 
 
 export const sideBar = {
@@ -21,6 +30,8 @@ export const skills = [
     {name: 'react', image: require('../assets/img/frontend-react-logo-transparent.png')},
     {name: 'redux', image: require('../assets/img/front-redux.png')},
     {name: 'axios', image: require('../assets/img/front-axios.png')},
+    {name: 'web3js', image: require('../assets/img/front-web3js.png')},
+    {name: 'ethersjs', image: require('../assets/img/front-ethersjs.png')},
     {name: 'react-echarts', image: require('../assets/img/front-echarts2.png')},
     {name: 'react-leaflet', image: require('../assets/img/front-leaflet.png')},
                 ],
@@ -35,6 +46,8 @@ export const skills = [
         {name: 'python', image: require('../assets/img/backend-python.png')},
         {name: 'node', image: require('../assets/img/backend-node-transparent.png')},        
         {name: 'typescript', image: require('../assets/img/typescript.png')},
+        {name: 'solidity', image: require('../assets/img/backend-solidity.png')},
+        {name: 'hardhat', image: require('../assets/img/backend-hardhat.jpg')},
         {name: 'django', image: require('../assets/img/backend-django.png')},
         {name: 'rest framework', image: require('../assets/img/backend-drf-transparent.png')},
         {name: 'express', image: require('../assets/img/backend-express.png')},
@@ -51,7 +64,7 @@ export const skills = [
 },
 
  {
-    type: 'DevOps, Sysadmin, & Other',
+    type: 'DevOps & Other',
     languages: ['languege'],
     frameworks: ['frameworks'],
     libraries: [
@@ -74,7 +87,122 @@ export const skills = [
 ]
 
 
-export const portfolio = [{
+export const portfolio = [
+    {
+        project: 'Pixel Invaderz',
+        repo:  
+                <>
+                <a href='https://github.com/alenq1/nftMintDapp'>
+                <FaGithub className='ml-5' size='1.5em'/>
+                </a>
+                <a href='https://nft-mint-dapp-beta.vercel.app/'>
+                <FaGlobeAmericas className='ml-5' size='1.5em'/>
+                </a>
+                </>
+                ,
+        stack: [<FaReact className='ml-3' size='2.5em'/>,             
+                <FaNodeJs className='ml-3' size='2.5em'/>,
+                <SiSolidity className='ml-3' size='2.5em'/>,
+                <FaEthereum className='ml-3' size='2.5em'/>,
+                
+        ],
+        description: [
+            'Decentrlized Mint NFT app',
+            'Solidity Smart Contract EVM compatible(Ethereum, Polygon)',
+            'Hardhat for contract deploy and testing',
+            'Using React and EtherJS on frontend',
+            'Owner Wallet customize supply, price, maxmint',
+            'Contract State pattern Oriented',
+            'Unreveal support',
+            'Metadata and image built with hashlips art engine'
+    ],
+        images: [
+            'https://static.platzi.com/media/blog/mern-stack-284eedb6-ee6b-4441-b181-5064a453a15a.png',
+            'https://www.onlogic.com/company/io-hub/wp-content/uploads/2013/07/socket-io-logo.jpg',
+            'https://www.freecodecamp.org/news/content/images/2019/07/1_JK4VDnsrF6YnAb2nyhMsdQ.png',
+            'https://miro.medium.com/max/365/1*Jr3NFSKTfQWRUyjblBSKeg.png'        
+        ]
+    
+    },
+    {
+        project: 'XERN Dockerized',
+        repo: <a href='https://github.com/alenq1/XERN-Dockerized'>
+                <FaGithub className='ml-5' size='1.5em'/>
+                </a>,
+        stack: [<FaReact className='ml-3' size='2.5em'/>, 
+                <FaDocker className='ml-3' size='2.5em'/>,
+                <FaNodeJs className='ml-3' size='2.5em'/>,
+                <DiMongodb className='ml-3' size='2.5em'/>,
+                <DiPostgresql className='ml-3' size='2.5em'/>,
+                <DiMysql className='ml-3' size='2.5em'/>,
+    
+                
+                ],
+        description: [
+            'Microservice-oriented deploy',
+            'Docker-compose build and deploy',
+            'For fast developmentet start',
+            'Use redux, thunk, and other React libraries',
+            'Express for api backend controller routes and models',
+            'Socket.io for real time data, bull queue tasks, and redis',
+            'CRUD tasks, Mongodb and sql databases (Mysql Postgres)',
+            'Authentication and Authorization with JWT',
+            'Service checks page'
+    ],
+        images: [
+            'https://static.platzi.com/media/blog/mern-stack-284eedb6-ee6b-4441-b181-5064a453a15a.png',
+            'https://www.onlogic.com/company/io-hub/wp-content/uploads/2013/07/socket-io-logo.jpg',
+            'https://www.freecodecamp.org/news/content/images/2019/07/1_JK4VDnsrF6YnAb2nyhMsdQ.png',
+            'https://miro.medium.com/max/365/1*Jr3NFSKTfQWRUyjblBSKeg.png'        
+        ]
+    
+    },
+    {
+        project: 'React-Django Dockerized',
+        repo: <a href='https://github.com/alenq1/react-django-dockerized/'>
+                <FaGithub className='ml-5' size='1.5em'/>
+                </a>,
+        stack: [<FaReact className='ml-3' size='2.5em'/>, 
+                <DiDjango className='ml-3' size='2.5em'/>,
+                <FaDocker className='ml-3' size='2.5em'/>,
+                <DiRedis className='ml-3' size='2.5em'/>
+            ],
+        description: [
+            'Microservice-oriented deploy',
+            'Docker-compose build and deploy',
+            'For fast developmentet start',
+            'Use redux, thunk, and other esential libraries',
+            'On backend side, websocket, celery tasks, and redis',
+            'Service checks page'
+    ],
+        images: [
+            'https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png',
+            'https://www.django-rest-framework.org/img/logo.png',
+            'https://www.freecodecamp.org/news/content/images/2019/07/1_JK4VDnsrF6YnAb2nyhMsdQ.png',
+            
+        ]
+    
+    },
+    {
+        project: 'Personal Site',
+        repo: <a href='https://github.com/alenq1/my-site'>
+                <FaGithub className='ml-5' size='1.5em'/>
+                </a>,
+        stack: [<FaReact className='ml-3' size='2.5em'/>],
+        description: [
+            'Just React',
+            'Centralized data to display',
+            'Using react-reveal for animations',
+            'Uploaded to github pages',
+            'Responsive'
+    ],
+        images: [
+            require('../assets/img/page1.png'),
+            require('../assets/img/page2.png'),                        
+        ]
+    
+    },
+    {
     project: 'Reactango-api-crud',
     repo:   <>
             <a href='https://github.com/alenq1/reactango-api-crud/'>
@@ -106,7 +234,8 @@ export const portfolio = [{
         require('../assets/img/rapc4.jpg'),
         
     ]
-},{
+    },
+    {
     project: 'CryptoCenter',
     repo: <a href='https://github.com/alenq1/cryptoweb/'>
             <FaGithub className='ml-3' size='1.5em'/>
@@ -137,88 +266,7 @@ export const portfolio = [{
         require('../assets/img/Cryc5.jpg'),
     ]
 
-},
-{
-    project: 'Personal Site',
-    repo: <a href='https://github.com/alenq1/my-site'>
-            <FaGithub className='ml-5' size='1.5em'/>
-            </a>,
-    stack: [<FaReact className='ml-3' size='2.5em'/>],
-    description: [
-        'Just React',
-        'Centralized data to display',
-        'Using react-reveal for animations',
-        'Uploaded to github pages',
-        'Responsive'
-],
-    images: [
-        require('../assets/img/page1.png'),
-        require('../assets/img/page2.png'),
-        require('../assets/img/page3.png'),
-        
-    ]
-
-},
-{
-    project: 'React-Django Dockerized',
-    repo: <a href='https://github.com/alenq1/react-django-dockerized/'>
-            <FaGithub className='ml-5' size='1.5em'/>
-            </a>,
-    stack: [<FaReact className='ml-3' size='2.5em'/>, 
-            <DiDjango className='ml-3' size='2.5em'/>,
-            <FaDocker className='ml-3' size='2.5em'/>,
-            <DiRedis className='ml-3' size='2.5em'/>
-        ],
-    description: [
-        'Microservice-oriented deploy',
-        'Docker-compose build and deploy',
-        'For fast developmentet start',
-        'Use redux, thunk, and other esential libraries',
-        'On backend side, websocket, celery tasks, and redis',
-        'Service checks page'
-],
-    images: [
-        'https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png',
-        'https://www.django-rest-framework.org/img/logo.png',
-        'https://www.freecodecamp.org/news/content/images/2019/07/1_JK4VDnsrF6YnAb2nyhMsdQ.png',
-        
-    ]
-
-},
-{
-    project: 'XERN Dockerized',
-    repo: <a href='https://github.com/alenq1/XERN-Dockerized'>
-            <FaGithub className='ml-5' size='1.5em'/>
-            </a>,
-    stack: [<FaReact className='ml-3' size='2.5em'/>, 
-            <FaDocker className='ml-3' size='2.5em'/>,
-            <FaNodeJs className='ml-3' size='2.5em'/>,
-            <DiMongodb className='ml-3' size='2.5em'/>,
-            <DiPostgresql className='ml-3' size='2.5em'/>,
-            <DiMysql className='ml-3' size='2.5em'/>,
-
-            
-            ],
-    description: [
-        'Microservice-oriented deploy',
-        'Docker-compose build and deploy',
-        'For fast developmentet start',
-        'Use redux, thunk, and other React libraries',
-        'Express for api backend controller routes and models',
-        'Socket.io for real time data, bull queue tasks, and redis',
-        'CRUD tasks, Mongodb and sql databases (Mysql Postgres)',
-        'Authentication and Authorization with JWT',
-        'Service checks page'
-],
-    images: [
-        'https://static.platzi.com/media/blog/mern-stack-284eedb6-ee6b-4441-b181-5064a453a15a.png',
-        'https://www.onlogic.com/company/io-hub/wp-content/uploads/2013/07/socket-io-logo.jpg',
-        'https://www.freecodecamp.org/news/content/images/2019/07/1_JK4VDnsrF6YnAb2nyhMsdQ.png',
-        'https://miro.medium.com/max/365/1*Jr3NFSKTfQWRUyjblBSKeg.png'        
-    ]
-
-},
-
+    },
 ]
 
 export const experience = {
@@ -261,9 +309,7 @@ export const experience = {
             name: 'Languages',
         description: [
         'Spanish (Native)',
-        'English (Conversational)',
-        'Chinese Mandarin (Basic Communication)'
-
+        'English (Conversational)',        
         ]},
     ]
 

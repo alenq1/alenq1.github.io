@@ -1,33 +1,31 @@
-import React from 'react';
-import {FaThList, FaWrench, FaBriefcase, FaUserFriends} from 'react-icons/fa'
 import styled, {keyframes} from 'styled-components'
-import Fade from 'react-reveal/Fade'
 
+export const StyledHeader = styled.header`
 
-const StyledHeader = styled.header`
+position: fixed;
 
-position: sticky;
-top: 0%;
 color: white;
 display: flex;
+justify-content: center;
+align-items: center;
 flex-direction: row;
 background-image: var(--header-bg);
 height: 75px;
 width: 100%;
-filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5));
+/* filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5)); */
 z-index: 3;
 
 
 
 .logo {
     display: flex;    
-    height: calc(2 * 50px);
+    height: calc(2 * 40px);
     width: calc(2 * 50px);
     background-image: var(--header-color);
     /*background-image: linear-gradient(307deg, transparent 0%, transparent 10%,rgba(190, 190, 190,0.04) 10%, rgba(190, 190, 190,0.04) 64%,transparent 64%, transparent 100%),linear-gradient(118deg, transparent 0%, transparent 11%,rgba(190, 190, 190,0.04) 11%, rgba(190, 190, 190,0.04) 31%,transparent 31%, transparent 100%),linear-gradient(73deg, transparent 0%, transparent 22%,rgba(190, 190, 190,0.04) 22%, rgba(190, 190, 190,0.04) 90%,transparent 90%, transparent 100%),linear-gradient(156deg, transparent 0%, transparent 51%,rgba(190, 190, 190,0.04) 51%, rgba(190, 190, 190,0.04) 97%,transparent 97%, transparent 100%),linear-gradient(90deg, rgb(15,28,82),rgb(15,28,82));*/
     align-items: center;
-    justify-content; center;
-    margin: 1em;
+    justify-content: center;
+    margin: 0em 1em;
     position: relative;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 16% 51%, 0% 0%);
 
@@ -35,12 +33,12 @@ z-index: 3;
 
 
 .console {
-    width: calc(2 * 30px);
-    height: calc(2 * 25px);
+    width: calc(2 * 25px);
+    height: calc(2 * 20px);
     background-image: linear-gradient(45deg, rgba(13, 13, 13,0.04) 0%, rgba(13, 13, 13,0.04) 36%,rgba(108, 108, 108,0.04) 36%, rgba(108, 108, 108,0.04) 76%,rgba(202, 202, 202,0.04) 76%, rgba(202, 202, 202,0.04) 100%),linear-gradient(0deg, rgba(13, 13, 13,0.04) 0%, rgba(13, 13, 13,0.04) 28%,rgba(108, 108, 108,0.04) 28%, rgba(108, 108, 108,0.04) 39%,rgba(202, 202, 202,0.04) 39%, rgba(202, 202, 202,0.04) 100%),linear-gradient(135deg, rgba(13, 13, 13,0.04) 0%, rgba(13, 13, 13,0.04) 56%,rgba(108, 108, 108,0.04) 56%, rgba(108, 108, 108,0.04) 97%,rgba(202, 202, 202,0.04) 97%, rgba(202, 202, 202,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
     background-size: contain;
     border-radius: 10px;
-    margin: 2em auto;
+    margin: 9em auto;
     color: #58d817;
     position: relative;
     object-fit: cover;
@@ -84,6 +82,13 @@ z-index: 3;
     display: none;
 }
 
+.header-text-loop{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 .slideset3 {
@@ -116,9 +121,10 @@ h3, h4 {
 .buttons {
 
     display: flex;
+    justify-content: flex-end;
     width: 100%;
     /*padding: 3rem;*/
-    margin: 1em 0em 0em 15em;
+    margin: 1em 0em 0em 0em;
     position: relative;
     
 
@@ -127,8 +133,8 @@ h3, h4 {
 
 .buttons a {
     margin-top: 1em;
-    width: 20%;
-    height: calc(2 * 35px);
+    width: 8%;
+    height: calc(2 * 14px);
     font-weight: 900;
     font-size: .9em;
     color: whitesmoke;
@@ -166,7 +172,7 @@ li {
 	position: absolute;
 	width: 3em;
 	height: 3em;
-	opacity: 0.15;
+	opacity: 0.5;
 }
 
 
@@ -209,21 +215,23 @@ li {
 /*========  Phone ===========*/
 @media (max-width: 640px) {
 
-top: 3%;
-width: 100vw;
+    justify-content: space-between;
+    height: 50px;
+    width: 100vw;
 
 .logo {
     
+
     height: 50px;
-    width: 50px;
-    margin: 0px auto;
+    width: 65px;
+    margin-left: 25px;
     
 }
 
 
 .console {
-    width: 30px;
-    height: 40px;
+    width: 35px;
+    height: 30px;
     border-radius: 10px;
     margin: 2em auto;
     font-weight: var(--font-medium);
@@ -237,12 +245,12 @@ width: 100vw;
 }
 
 .prompt {
-    margin: .5em 0em 0em 0em;
+    margin: 1em 0em 0em 0em;
     font-size: .75em;
     
 }
 .cursor{
-    margin: -1em 0em 0em .5em;
+    margin: -0.5em 0em 0em 0em;
     font-size: 1em;
 }
 
@@ -260,7 +268,7 @@ width: 100vw;
     }
 
 
-    .headertext {
+    .header-text {
         display: flex;
 
         img {
@@ -277,6 +285,10 @@ width: 100vw;
         }
     }
 
+.header-text-loop{
+    margin-right: 35px
+}
+
 h3, h4 {
 
     text-align: center;
@@ -285,7 +297,7 @@ h3, h4 {
 
 .buttons {
 
-    display: block;
+    display: none;
     width: 80%;
     margin: -1.5em 0em 1em 5em;
     padding: 0rem;
@@ -306,60 +318,3 @@ h3, h4 {
 
 
 `
-
-const Header = (props) => {
-  return (
-    <StyledHeader>
-    	<Fade left> 
-                <div className="headertext">
-                    {/*<img src={require('../assets/img/terminal2.gif')} alt="Avatar" />*/}
-                    <div className='logo'>
-                        <div className='console'>
-                            <div className='titlebar'>
-                            </div>
-                            <h5 className='prompt'>>
-                                <div className='cursor'>_</div>
-                                <div className="console-msg">
-                                    hello
-                                </div>
-                            </h5>
-                        </div>
-                    </div>
-                </div>    
-                <div className="slideset3">
-                        <h3 className='item-1'>Alejandro Castellanos</h3>
-                        <h4 className='item-2'>Web Developer &amp;</h4>                            
-                        <h4 className='item-2'>IT Problem Solver</h4>  
-                </div>
-                <ul className='buttons'>
-                    <a href='#skills'>
-                    	<li>
-                        	<FaWrench className='btn-icons' />
-                            	<span>Skills</span>
-                        </li>
-                    </a>
-                    <a href='#portfolio'>
-                    	<li>
-                        <FaBriefcase className='btn-icons' />
-                        <span>Portfolio</span>
-                        </li>
-                    </a>
-                    <a href='#experience'>
-                    	<li>
-                        <FaThList className='btn-icons' />
-                        <span>Experience</span>
-                        </li>
-                    </a>
-                    <a href='#contact'>
-                    	<li>
-                        <FaUserFriends className='btn-icons' />
-                        <span>Contact</span>
-                        </li>
-                    </a>    
-                </ul>        
-            </Fade>
-    </StyledHeader>
-  )
-}
-
-export default Header;

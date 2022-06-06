@@ -1,30 +1,37 @@
-import React from 'react'
-import { Card } from 'react-bootstrap'
-import {experience} from '../sources/data'
-import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 
-
-const StyledExperience = styled.div`
+export const StyledExperience = styled.div`
 
 .card-experience {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 0px;
-    text-align: left;
-    margin: 6rem 1.8rem;
+    
+    margin: 10rem 1.8rem 6rem;
     color:  whitesmoke;
     
     
 
     .header {
-        display: block;
+        display: flex;
+        justify-content: center;
         background: var(--card-header-footer);
-        padding: 1rem 0rem;
+        padding: .1rem 0rem;
         opacity: 0.9;
-        text-align: center;
+        height: 7.5%;   
+        width: 100%; 
+        
+
+        h4 {
+        font-weight: var(--font-medium);
+        font-size: 2.2rem;
+        margin: 0;
+
+        text-align: center;   
+    }
     }
 
     .body{
+        text-align: left;
         display: flex;
         flex-wrap: wrap;
         background: var(--card-background);
@@ -67,7 +74,14 @@ const StyledExperience = styled.div`
         margin: 4rem 1rem;
 
     .header {
-        padding: 0.5rem 0rem;
+        padding: 0rem;
+        height: 10%;
+        text-shadow: 2px 2px 8px #000;
+        
+
+        h4{
+            font-size: 1.5rem;
+        }
     }
 
     .body {
@@ -86,6 +100,7 @@ const StyledExperience = styled.div`
 
             h5{
                 margin: 2.5rem 1rem; 
+                font-size: 1.5rem;
             }
 
             li{
@@ -100,41 +115,3 @@ const StyledExperience = styled.div`
 
 
 `
-
-
-
-
-export const Experience = () => {
-    return (
-        <StyledExperience>
-        <Fade bottom>
-        
-            <div className='card-experience'>
-                <div className='header'>
-                    <h4>{experience.title}</h4>
-                </div>
-                <div className='body'>
-                    <div className='experience-list'>
-                    {experience.types.map((items, index)=> (
-                    <div key={index}> 
-                       <h5 className='' >{items.name}</h5>
-                       {items.description.map((item, index) => (
-
-                        <li key={index}>{item}</li>
-                       ))}
-                        
-                    </div>
-                    ))}
-                    </div>
-                </div>
-
-
-            </div>
-            
-        </Fade>
-        </StyledExperience>
-    )
-}
-
-
-export default Experience

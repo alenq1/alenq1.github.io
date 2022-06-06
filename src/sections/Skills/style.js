@@ -1,39 +1,52 @@
-import React from 'react'
-import {Card, } from 'react-bootstrap'
-import {skills} from '../sources/data'
-import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 
+export const StyledSkills = styled.div`
 
-const StyledSkills = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 50px 0px 50px;
+
+
 
 .cardskill {
     
     
-    --text-color: whitesmoke;
+    --text-color: whitesmoke;    
+    /* width: 100%; */
 
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     padding: 0px;
-    text-align: center;
-    margin: 6rem 1.8rem;
+    
+    margin: 4rem 2em;
     color: var(--text-color);
+    /* display: flex;
+    justify-content:center; */
+    flex-wrap: wrap;
+    max-width: 300px;
 
     .header {
-        display: block;
+        /* background: red; */
+        display: flex;
+        text-shadow: 2px 2px 8px #000;
         background: var(--card-header-footer);
-        padding: 1rem 0rem;
+        padding: .1rem 0rem;
         opacity: 0.9;
-        
+        height: 7.5%;   
+        width: 100%;     
     }
 
     h4 {
         font-weight: var(--font-medium);
+        font-size: 1.75rem;
+        margin: 0;
     }
 
     .body{
-        display: flex;
-        flex-wrap: wrap;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* background: green; */
         background: var(--card-background);
         opacity: var(--transparency);
         width: 100%;
@@ -46,9 +59,10 @@ const StyledSkills = styled.div`
             
             img{
                 height: 6.5rem;
-                max-width: auto;        
+                max-width: 200px;        
                 transition: all .2s ease-in-out;
                 opacity: 1;
+                object-fit: contain;
             }
 
             img:hover{
@@ -101,30 +115,3 @@ const StyledSkills = styled.div`
 }
 
 `
-const Skills = () => {
-    return (
-    
-        <StyledSkills>    
-            {skills.map( (skills, index) => (
-            <Fade bottom key={index}>
-                <div className='cardskill' >
-                    <div className='header'>
-                        <h4>{skills.type}</h4>
-                    </div>
-                    <div className='body'>
-                        {skills.libraries.map( (libraries, libindex) => (
-                        <div className='single-skill' key={libindex}>
-                            <img src={libraries.image} alt={index}/>
-                            <p className='ml'></p>                    
-                        </div>
-                        ))}                    
-                    </div>            
-                </div>
-            </Fade>
-            ))}  
-        </StyledSkills>
-    
-    )
-}
-
-export default Skills

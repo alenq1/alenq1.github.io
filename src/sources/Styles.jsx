@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 
 const img = require('../assets/img/code2.jpg')
@@ -400,7 +400,49 @@ template {
 [hidden] {
   display: none;
 }
+`
 
 
+export const Wrapper = styled.div`
+
+  
+  background-image: var(--background-img);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*display: grid;
+  grid-template-columns: repeat(12, 1fr);
+*/
+  
+  .sidebar {
+    grid-column: span 3;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.05));
+    color: white;
+    
+  }
+
+  .content-sidebar {
+
+    grid-column: span 9;
+    /*grid-column: span 12;*/
+  }
+
+
+  .header{
+    grid-column: span 12;
+  }
+
+  .content-header{
+    grid-column: span 12;
+  }
+
+@media screen and (max-width: 640px) {
+  .sidebar {
+    grid-column: span 12;
+  }
+  .content-sidebar {
+    grid-column: span 12;
+  }
+}
 
 `
