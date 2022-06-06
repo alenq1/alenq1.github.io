@@ -18,14 +18,8 @@ const Content = () => {
                 <div className='content-title'>  
                 <h1><Typewriter
                         onInit={(typewriter) => {
-                            typewriter.typeString('Lets solve problems')
-                            .callFunction(() => {
-                                console.log('String typed out!');
-                            })                            
-                            .typeString(' with code')
-                            .callFunction(() => {
-                                console.log('All strings were deleted');
-                            })
+                            typewriter.typeString('Lets solve problems')                                                        
+                            .typeString(' with code')                            
                             .start();
                         }}
                     />
