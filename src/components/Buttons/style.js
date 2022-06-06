@@ -1,8 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 
-
-const StyledButton = styled.a`
+export const StyledButton = styled.a`
 .btn-three {
     color: #FFF;
     transition: all 0.5s;
@@ -57,19 +55,4 @@ const StyledButton = styled.a`
 
 }
 
-
-
 `
-
-
-const Buttons = ({children, link}) => {
-    return (
-        <StyledButton href={link}>
-            <div className='btn-three'>
-            {children}
-            </div>
-        </StyledButton>
-    )
-}
-
-export default Buttons
