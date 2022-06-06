@@ -117,10 +117,8 @@ export const portfolio = [
             'Metadata and image built with hashlips art engine'
     ],
         images: [
-            'https://static.platzi.com/media/blog/mern-stack-284eedb6-ee6b-4441-b181-5064a453a15a.png',
-            'https://www.onlogic.com/company/io-hub/wp-content/uploads/2013/07/socket-io-logo.jpg',
-            'https://www.freecodecamp.org/news/content/images/2019/07/1_JK4VDnsrF6YnAb2nyhMsdQ.png',
-            'https://miro.medium.com/max/365/1*Jr3NFSKTfQWRUyjblBSKeg.png'        
+            require('../assets/img/mint1.png'),
+            require('../assets/img/mint2.png')
         ]
     
     },
