@@ -16,14 +16,20 @@ const Content = () => {
         <StyledContent>            
             <Fade bottom>
                 <div className='content-title'>  
-                <h1><Typewriter
-                        onInit={(typewriter) => {
-                            typewriter.typeString('Lets solve problems')                                                        
-                            .typeString(' with code')                            
-                            .start();
-                        }}
-                    />
-                </h1>
+                    <div className='call-to-action'>
+                        <h1><Typewriter
+                                onInit={(typewriter) => {
+                                    typewriter.typeString('Lets solve problems')                                                        
+                                    .typeString(' with code')                            
+                                    .start();
+                                }}
+                            />
+
+                        </h1>
+                        <a href='../../files/Resume.pdf' download>                            
+                            Download Resume                            
+                        </a>
+                    </div>
                     <Ilust fill='red' className='ilust'/>
                 </div>
                 <div className='showbutton'>

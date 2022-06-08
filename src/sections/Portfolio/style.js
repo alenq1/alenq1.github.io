@@ -71,25 +71,26 @@ export const StyledPortfolio = styled.div `
         overflow: scroll;
         
         .projects {
-            margin: 2.5rem 1.5rem; 
+            padding: 2.5rem 1.5rem; 
             text-align: left;            
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             justify-content: center;
             align-items: center;
             
             
             .slide-show{
                 /* width: 300px;
-                height: 200px; */
+                height: 200px;
+                overflow: hidden;
                 
                 img{
-                    /* max-width: 300px; */
-                    /* width: 300px;
-                    height:250px; */
-                    object-fit: cover;
-                }
+                    max-width: 300px;
+                    width: 300px;
+                    height:250px;
+                    object-fit: contain;
+                } */
             }
 
             .description {

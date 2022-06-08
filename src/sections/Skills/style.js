@@ -40,7 +40,7 @@ export const StyledSkills = styled.div`
     h4 {
         font-weight: var(--font-medium);
         font-size: 1.75rem;
-        margin: 0;
+        margin-top: -20px;
     }
 
     .body{
@@ -50,11 +50,14 @@ export const StyledSkills = styled.div`
         background: var(--card-background);
         opacity: var(--transparency);
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
 
         .single-skill {
             margin: 2rem auto;
-            padding: 0rem 1rem;
+            padding: 0rem 3rem;
             opacity: 1;
             
             img{

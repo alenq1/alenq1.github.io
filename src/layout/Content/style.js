@@ -21,33 +21,44 @@ height: 100%;
     align-items: center;
     width: 100%;
     padding-top: 70px;
+
+    .call-to-action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+
     
-    h1 {
-        /* font-size: 4rem;
-        font-weight: 300;
-        line-height: 1.2;
-        /* overflow: hidden; Ensures the content is not revealed until the animation */
-        /* border-right: .15em solid orange; The typwriter cursor */
-        /* white-space: nowrap; Keeps the content on a single line */
-        /* word-wrap: break-word; */
-        /* margin: 0 auto; Gives that scrolling effect as the typing happens */
-        /* letter-spacing: .05em; Adjust as needed */
-        /* animation:  */
-            /* typing 3.5s steps(40, end), */
-            /* blink-caret .75s step-end infinite; */
-            /* typing 4s steps(44) 1s 1 normal both, */
-            /* blinkTextCursor 500ms steps(44) infinite normal; */ 
+        h1 {        
             margin-top: 0px;
-            width: 50%;
-            /* animation: typing 4s steps(22), blink-caret .5s step-end infinite alternate; */
-            /* white-space: nowrap; */
+            width: 80%;
             word-wrap: wrap;
-            /* overflow: hidden; */
-            /* border-right: 3px solid;             */
             font-size: 4em;
             font-weight: 300;
             line-height: 1.2;
+        }
+        a{
+            width: 30%;
+            color: var(--titles-colors);
+            cursor: pointer;
+            text-shadow: 2px 2px 8px #000;
+            font-weight: 800;
+            text-decoration-line: none;
+            background: var(--slider-colors);
+            padding: 0.75em;
+            border-radius: 10px;
+            border: 0;
+
+            &:hover{
+                background-blend-mode:"darken";
+            }
+        }
+
+
     }
+    
+    
     
 }
 
@@ -159,33 +170,43 @@ height: 100%;
     .content-title {
 
         padding: 0;
-        
+        flex-direction: column;
+        width: 100%;
         /* background: green; */
 
-        h1 {
-            width: 90%;
-            font-size: 2.5rem;
-            font-weight: 300;
-            line-height: 1.2;
-        }
-        .complement{
+        
+        .call-to-action{
             
-
+            width: 90%;
+            h1 {
+                margin-top: 0px;
+                width: 100%;
+                font-size: 2.5rem;
+                font-weight: 300;
+                line-height: 1.2;
             }
+            a{
+                width: 70%;
+            }
+            
+            
+        }
+
+        .ilust {
+            /* display: none; */
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin-bottom: 0px;
+        }
     }
 
-    .ilust {
-        /* display: none; */
-        width: 50%;
-        height: 50%;
-        position: absolute;
-        z-index: -1;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        margin-top: 150px;
-
-    }
+    
 
     .showbutton{
         display: none;

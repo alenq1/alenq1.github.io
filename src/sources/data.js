@@ -304,6 +304,15 @@ export const experience = {
 
         ]},
         {
+            name: 'BlockChain & Crypto',
+        description: [
+        'Knowledge Blockchain Fundamentals',
+        'Development on web3 dapp and ecosystem',
+        'Average knowledge analysis from cryptocurrency projects'
+
+
+        ]},
+        {
             name: 'Languages',
         description: [
         'Spanish (Native)',

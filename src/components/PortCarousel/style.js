@@ -1,18 +1,25 @@
 import styled from 'styled-components'
-import { Carousel } from 'react-responsive-carousel';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
-export const StyledCarousel = styled(Carousel)`
+export const StyledCarousel = styled(Slider)`
 
-
-    /* display: flex;
-    max-width: 200px;
-    max-height: 100px; */
+    max-width: 400px;
+    max-height: 250px;
+    /* display: inline-block; */
+    /* background: red; */
 
 
 .carousel-img {
     /* display: block; */
-    width: 100%;
-    /* height: 100%; */
+    width: 250px; 
+    height: 175px;
+    /* background: green; */
+    img {
+        max-height: 200px;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 640px) {

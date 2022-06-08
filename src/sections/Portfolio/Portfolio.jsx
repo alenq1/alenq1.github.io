@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, {useState, Fragment } from 'react'
 import {portfolio} from '../../sources/data'
 import PortCarousel from '../../components/PortCarousel/PortCarousel'
 import { FaAngleDoubleDown,
@@ -19,40 +19,40 @@ const Portfolio = () => {
     return (
         <StyledPortfolio>                
                                                     
-                        {portfolio.map( (detail, index) => (                 
-                        <Fade bottom key={uuidv4()}>
-                        <div className='card-portfolio'>
-                            <div className='header'>
-                                <span className='project-title'>{detail.project}</span>
-                                <span className='project-links'>{detail.repo}</span>                 
-                            </div>
-                            <div className='body' key={uuidv4()}>                                
-                                <div className='projects'>
-                                    <div className='slide-show'>
-                                        <PortCarousel content={detail}/>
-                                    </div>
-                                    <div className='description'>
-                                            <Fade bottom >
-                                                {detail.description.map((list, desc_index) => (                 
-                                                    <li key={uuidv4()}>{list}</li>                 
-                                                ))}    
-                                            </Fade>
-                                    </div>
-                                </div>
-                            </div>   
-                            <div className='footer' key={uuidv4()}>
-                                <span>Stack Used</span>
-                                <span>
-                                {detail.stack.map((stack) => ( 
-                                    stack
-                                ))}
-                                </span>
-                            </div>  
+            {portfolio.map( (detail, index) => (                 
+            <Fade bottom key={uuidv4()}>
+            <div className='card-portfolio'>
+                <div className='header'>
+                    <span className='project-title'>{detail.project}</span>
+                    <span className='project-links'>{detail.repo}</span>                 
+                </div>
+                <div className='body' key={uuidv4()}>                                
+                    <div className='projects'>
+                        
+                            <PortCarousel content={detail}/>
+                        
+                        <div className='description'>
+                                <Fade bottom >
+                                    {detail.description.map((list, desc_index) => (                 
+                                        <li key={uuidv4()}>{list}</li>                 
+                                    ))}    
+                                </Fade>
                         </div>
-                        </Fade>    
-                        ))}
+                    </div>
+                </div>   
+                <div className='footer' key={uuidv4()}>
+                    <span>Stack Used</span>
+                    <span>
+                    {detail.stack.map((stack) => ( 
+                        <Fragment key={uuidv4()}>{stack}</Fragment>
+                    ))}
+                    </span>
+                </div>  
+            </div>
+            </Fade>    
+            ))}
                     
-            </StyledPortfolio>
+        </StyledPortfolio>
         )
 }
 

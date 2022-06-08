@@ -2,7 +2,28 @@ import React from 'react'
 import {skills} from '../../sources/data'
 import Fade from 'react-reveal/Fade'
 import {StyledSkills} from './style'
-import { Carousel } from 'react-responsive-carousel'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+const settings = {
+    className: "slider variable-width center",
+    accessibility: false,
+    arrows: false,
+    // centerPadding: "91px",
+    variableWidth: true,
+    centerMode: true,
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    adaptiveHeight: true,
+  };
+  
+
+
 
 const Skills = () => {
     return (
@@ -14,10 +35,11 @@ const Skills = () => {
                     <div className='header'>
                         <h4>{skills.type}</h4>
                     </div>
-                    <Carousel showThumbs={false} 
-                        infiniteLoop={true} 
-                        showIndicators={false} 
-                        showStatus={false}
+                    <Slider {...settings}
+                        // showThumbs={false} 
+                        // infiniteLoop={true} 
+                        // showIndicators={false} 
+                        // showStatus={false}
                         className='body'
 
                     >
@@ -27,7 +49,7 @@ const Skills = () => {
                             <p className='ml'></p>                    
                         </div>
                         ))}                    
-                    </Carousel>            
+                    </Slider>            
                 </div>
             </Fade>
             ))}  
