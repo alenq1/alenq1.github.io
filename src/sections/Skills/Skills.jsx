@@ -46,7 +46,7 @@ const Skills = () => {
                         {skills.libraries.map( (libraries, libindex) => (
                         <div className='single-skill' key={libindex+libraries.image}>
                             <img src={libraries.image} alt={index}/>
-                            <p className='ml'></p>                    
+                            {/* <div>{libraries.name}</div>   */}
                         </div>
                         ))}                    
                     </Slider>            

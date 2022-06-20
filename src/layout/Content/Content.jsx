@@ -10,6 +10,8 @@ import Typewriter from 'typewriter-effect';
 import {ReactComponent as Ilust} from '../../assets/img/displays.svg'
 
 
+const resumeUrl = 'https://raw.githubusercontent.com/alenq1/alenq1.github.io/master/src/assets/files/Resume.pdf'
+
 const Content = () => {
 
     return (
@@ -26,7 +28,7 @@ const Content = () => {
                             />
 
                         </h1>
-                        <a href='../../files/Resume.pdf' download>                            
+                        <a href={resumeUrl} download>                            
                             Download Resume                            
                         </a>
                     </div>

@@ -59,6 +59,10 @@ export const StyledSkills = styled.div`
             margin: 2rem auto;
             padding: 0rem 3rem;
             opacity: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             
             img{
                 height: 6.5rem;
@@ -70,6 +74,12 @@ export const StyledSkills = styled.div`
 
             img:hover{
                 transform: scale(1.1);
+            }
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
             }
         }
         
