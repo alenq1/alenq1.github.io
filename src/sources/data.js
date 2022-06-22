@@ -117,8 +117,8 @@ export const portfolio = [
             'Metadata and image built with hashlips art engine'
     ],
         images: [
-            require('../assets/img/mint1.png'),
-            require('../assets/img/mint2.png')
+            require('../assets/img/mint1.jpg'),
+            require('../assets/img/mint2.jpg')
         ]
     
     },
@@ -195,8 +195,8 @@ export const portfolio = [
             'Responsive'
     ],
         images: [
-            require('../assets/img/page1.png'),
-            require('../assets/img/page2.png'),                        
+            require('../assets/img/page1.jpg'),
+            require('../assets/img/page2.jpg'),                        
         ]
     
     },

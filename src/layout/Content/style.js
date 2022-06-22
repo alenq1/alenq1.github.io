@@ -49,9 +49,13 @@ height: 100%;
             padding: 0.75em;
             border-radius: 10px;
             border: 0;
+            transition: .2s ease-in-out 0s;
 
             &:hover{
-                background-blend-mode:"darken";
+                background-blend-mode:"darken";                
+                transform: scale(1.1);
+                background: var(--background-darker);
+                
             }
         }
 
